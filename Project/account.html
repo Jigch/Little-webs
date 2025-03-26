@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Account - Students Request</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #00418b; /* Light brown background */
+            color: black;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .container {
+            width: 100vw; /* Take full viewport width */
+            height: 100vh; /* Take full viewport height */
+            background-image: linear-gradient(to bottom, rgb(24, 24, 116), rgb(127, 127, 219));
+            padding: 20px;
+            border-radius: 0; /* Remove border radius for full screen */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center content vertically */
+            align-items: center; /* Center content horizontally */
+        }
+
+        h1 {
+            text-align: center;
+            background-color: yellowgreen; /* Orange background for "YOUR ACCOUNT" */
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+            width: 60%; /* Adjust width as needed */
+        }
+        .container h1 a{
+            text-decoration: none;
+        }
+
+        .logout-button {
+            text-align: center;
+            margin-bottom: 20px;
+            width: 80%; /* Adjust width as needed */
+        }
+
+        .logout-button button {
+            color: black;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 10%; /* Full width button */
+        }
+
+        .approved-message {
+            
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+            text-align: center;
+            width: 50%; /* Adjust width as needed */
+        }
+
+        .students-request {
+            margin-bottom: 20px;
+            width: 50%; /* Adjust width as needed */
+        }
+
+        .students-request h2 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .request-list li {
+            background-color: #4169E1; /* Medium orchid background for list items */
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+        }
+
+        .request-list li div {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .request-list li button {
+            background-color: #DC143C; /* Crimson background for buttons */
+            color: black;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .explore-more {
+            text-align: center;
+            width: 50%; /* Adjust width as needed */
+        }
+
+        .explore-more a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .hackit-2025 {
+            text-align: center;
+            margin-top: 20px;
+            width: 50%; /* Adjust width as needed */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1><a href="dash.html">YOUR ACCOUNT ➡️</a></h1>
+
+    <div class="approved-message">
+        You're approved
+    </div>
+
+    <div class="logout-button">
+        <button>LOGOUT</button>
+    </div>
+
+    <div class="students-request">
+        <h2>Students Request</h2>
+        <ul class="request-list">
+            <li>
+                <div>
+                    <span>Message</span>
+                    <div>
+                        <button>Accept</button>
+                        <button>Reject</button>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <span>Message</span>
+                    <div>
+                        <button>Accept</button>
+                        <button>Reject</button>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <span>Message</span>
+                    <div>
+                        <button>Accept</button>
+                        <button>Reject</button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="explore-more">
+        <a href="#">Explore more</a>
+    </div>
+
+    <div class="hackit-2025">
+        @HACKIT 2025
+    </div>
+</div>
+
+</body>
+</html>

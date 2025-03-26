@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grow On Track - Your Account</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #008B8B; /* Teal background */
+            color: black;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: left; /* Aligned left as in the image */
+            margin-bottom: 20px;
+            font-size: 2em; /* Increase font size for better visibility */
+        }
+        .container h1 a{
+            text-decoration: none;
+            color: #000;
+        }
+
+        .grow-on-track {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .logout-button button {
+            background-color: #FF6347; /* Tomato color for logout */
+            color: #fff;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .find-mentors {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .find-mentors input[type="text"] {
+            flex-grow: 1;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px 0 0 4px; /* Rounded left corners */
+        }
+
+        .find-mentors button {
+            background-color: #32CD32; /* Lime green search button */
+            color: #fff;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 0 4px 4px 0; /* Rounded right corners */
+            cursor: pointer;
+        }
+
+        .mentor-list li {
+            background-color: #4169E1; /* Royal blue mentor list items */
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; /* Align text to the start */
+        }
+
+        .mentor-list li strong {
+            margin-bottom: 5px;
+        }
+
+        .mentor-list li div {
+            display: flex;
+            justify-content: flex-start; /* Align buttons to the start */
+            width: 100%;
+        }
+
+        .mentor-list li button {
+            background-color: #000;
+            color: #fff;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 5px; /* Add space between buttons */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1><a href="mantee.html">YOUR ACCOUNT ➡️</a></h1>
+
+    <div class="grow-on-track">
+        <p>GROW On Track MENTORSHIP</p>
+        <div class="logout-button">
+            <button>Logout</button>
+        </div>
+    </div>
+
+    <div class="find-mentors">
+        <input type="text" placeholder="Find mentors">
+        <button>🔍</button>
+    </div>
+
+    <h2>Recommended mentors</h2>
+    <ul class="mentor-list">
+        <li>
+            <strong>Mentor A</strong>
+            <div>
+                <button>Message</button>
+                <button>Send request</button>
+            </div>
+        </li>
+        <li>
+            <strong>Mentor B</strong>
+            <div>
+                <button>Message</button>
+                <button>Send request</button>
+            </div>
+        </li>
+        <li>
+            <strong>Mentor C</strong>
+            <div>
+                <button>Message</button>
+                <button>Send request</button>
+            </div>
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>

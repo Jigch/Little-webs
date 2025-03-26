@@ -1,0 +1,102 @@
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(24, 24, 116);
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li {
+    margin-right: 10px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+}
+header nav a.active{
+    background-color: gray;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.hero {
+    background-image: linear-gradient(to bottom, rgb(24, 24, 116), rgb(127, 127, 219));
+    background-size: 100% 300px;
+    background-position: 0% 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+#head{
+    text-align: center;
+}
+.m1{
+    text-align: center;
+}
+.m2{
+    text-align: center;
+}
+
+#mentee-overview {
+    padding: 2em;
+}
+
+#mentee-overview ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#mentee-overview li {
+    margin-bottom: 20px;
+}
+
+#mentee-overview img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 200px;
+}
+
+#upcoming-meetings {
+    padding: 2em;
+    margin-left: 400px;
+}
+
+#upcoming-meetings ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#upcoming-meetings li {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #3e3cbe;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    clear: both;
+}
+

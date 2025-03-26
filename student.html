@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+
+    <style>
+        *{
+    margin: 10;
+    padding: 10;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: blanchedalmond;
+}
+    </style>
+</head>
+<body>
+    <form action="/register/student" method="POST" enctype="multipart/form-data">
+        <div class="input-box">
+            <u><h1>Student Registraion Form</h1></u>
+            <p>
+            <label for="Firstname">Name:</label>
+            <input type="text" name="Firstname" id="Firstname" placeholder="First Name">
+            </p>
+            <label for="Lastname">Surname:</label>
+            <input type="text" placeholder="Last Name">
+            <p>
+                <label for="">Gender:</label>
+                <input type="radio" id="mele" name="Gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="Gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" name="Gender" id="other" value="other">
+                <label for="other">Other</label>
+    
+            </p>
+            <p>
+                <label for="ins">Institute:</label>
+            <input type="text" name="ins" id="ins" placeholder="School/College name"> 
+            </p>
+            <p>
+                <label for="Dgree">Dgree You Are Currently Pursuing:</label>
+                <input type="text" name="Firstname" id="Firstname" placeholder="BCA">
+            </p>
+            <p>
+                <label for="Skill">Skill you have:</label>
+                <input type="text" name="Skill" id="Skill" placeholder="java etc">
+            </p>
+            <p>
+                <label for="dev">Skill You Want To Develop:</label>
+                <input type="text" name="dev" id="dev" placeholder="web development etc">
+            </p>
+            <p> <label for="job">Desired Job:</label>
+                <input type="text" name="job" id="job" placeholder="job">
+            </p>
+            <p>
+                <label for="com">Desired Company:</label>
+                <input type="text" name="com" id="com" placeholder="Amazon etc">
+            </p>
+            <p>
+                <label for="Email">Email:</label>
+                <input type="text" name="Email" id="Email" placeholder="@gmail.com">
+            </p>
+            <p>
+                <label for="Set Password">Set Password:
+                </label>
+                <input type="text" name="password" id="password" placeholder="Comlex Password">
+            </p>
+            <button class="button" style="background-color: green; border-radius: 5px; padding: 10px 20px; border: none;">Confirm</button>
+            <br>
+            </br>
+            <button class="button2" style="background-color: purple; border-radius: 5px; padding: 10px 20px; border: none;">Back</button>
+        </div>
+    </form>
+    
+    <script src="{{url_for('static',filename='student.js')}}"></script>
+</body>
+</html>

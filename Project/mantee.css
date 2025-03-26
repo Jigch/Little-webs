@@ -1,0 +1,20 @@
+.mentee-dashboard {
+    width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .mentee-info, .mentor-info, .progress-tracking, .messages {
+    margin-bottom: 20px;
+  }
+  
+  h1,.thank {
+    text-align: center;
+  }
+  
+  h2 {
+    margin-top: 10px;
+  }

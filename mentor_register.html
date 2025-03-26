@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+        <!--<link rel="stylesheet" href="style.css">-->
+        <style>
+            *{
+                background-color: rgb(165, 207, 224);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>FILL FORM FOR REGISTOR</h1>
+            <!--Form-->
+            <form action="{{ url_for('register_mentor')}}" method="POST" enctype="multipart/form-data">
+                <fieldset>
+                    <label for="fname">First_name:</label>
+                    <input type="text" name="first_name" id="fname" required>
+                    <label for="lname">Surname:</label>
+                    <input type="text" name="surname" id="lname">
+                    <div id="d1">
+                    <br>
+                    Profession:
+                    <input type="text" name="profession" required>
+                    </div>
+                    <div id="d2">
+                    <br>
+                    Work Place:
+                    <input type="text" name="workplace">
+                    </div>
+                    <div id="d3">
+                    <br>
+                    Work Experience:
+                    <input type="text" name="experience" required>
+                    </div>
+                    <div id="d0">
+                        <br><br>
+                        Sector:
+                        <input type="checkbox" name="sector" value="IT">IT
+                        <input type="checkbox" name="sector" value="Corporate">Corporate
+                        <input type="checkbox" name="sector" value="Government">Government
+                        <input type="checkbox" name="sector" value="Enginerring">Enginerring
+                        <input type="checkbox" name="sector" value="Doctor">Doctor
+                        
+                    </div>
+                    <div id="d4">
+                    <br><br>
+                    <fieldset>
+                        <legend>Write about your skill:</legend>
+                        <textarea rows="5" cols="100" name="skills" placeholder="Enter description"></textarea>
+                    </fieldset>
+                    <div id="d5">
+                        <br><br>
+                        Email:
+                        <input type="email" name="email" required>
+                    </div>
+                    <div id="d6">
+                        <br><br>
+                        Password:
+                        <input type="password" name="password" required>
+                    </div>
+
+                    <div id="d7">
+                    <br>
+                    Reset:
+                    <input type="reset">
+                    </div>
+                    <br>
+                    <button class="Button">Confirm</button>
+                    <button class="Button1">Back</button>
+                </fieldset>
+            </form>
+    </body>
+</html>
